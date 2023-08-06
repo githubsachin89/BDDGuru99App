@@ -1,6 +1,7 @@
 package UtilsLayer;
 
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 
 public class UtilsClass 
 {
@@ -19,4 +20,17 @@ public class UtilsClass
 			wb.click();
 		}
 	}
+	
+	public static void selectvisible(WebElement wb, String value) {
+		
+		Select sel =new Select(wb);
+		sel.selectByVisibleText(value);
+		
+		
+		
+		
+	}
+	
+	
+	
 }

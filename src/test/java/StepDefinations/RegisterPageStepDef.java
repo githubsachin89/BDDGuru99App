@@ -24,5 +24,9 @@ public class RegisterPageStepDef extends BaseClass
 		
 		regPage.contactInfo("Sachin", "Gaikwad", "1234567890", "sachG@gmail.com"); 
 	}
+	@Then("user enter address and city and state and postal code and country")
+	public void user_enter_address_and_city_and_state_and_postal_code_and_country() {
+	   regPage.mailingInfo("pune", "pune", "Maharahstra", "123546", "INDIA");
+	}
 
 }
